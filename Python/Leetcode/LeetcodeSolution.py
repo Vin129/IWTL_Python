@@ -16,6 +16,15 @@ class Solution:
             index = index + 1
         return num
 
+    #136
+    def singleNumber(self, nums: List[int]) -> int:
+        n = nums[0]
+        if len(nums) == 1:
+            return n
+        for x in range(1,len(nums)):
+            n = n^nums[x]
+        return n
+
 
 
 
