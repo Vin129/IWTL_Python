@@ -13,5 +13,5 @@ class Solution:
             temp = p.next
             p.next = prev
             prev = p
-            p = temp
+            p = temp 
         return prev
